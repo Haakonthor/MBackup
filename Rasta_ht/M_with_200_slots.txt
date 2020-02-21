@@ -1,0 +1,1010 @@
+M = 10261
+Slots: 330
+Security lvl: 34.7779
+
+M = 10355
+Slots: 216
+Security lvl: 3.45133
+
+M = 10845
+Slots: 240
+Security lvl: -25.8503
+
+M = 10923
+Slots: 220
+Security lvl: -13.5597
+
+M = 11023
+Slots: 240
+Security lvl: 47.5491
+
+M = 11049
+Slots: 252
+Security lvl: -6.78056
+
+M = 11119
+Slots: 218
+Security lvl: 52.4419
+
+M = 11275
+Slots: 400
+Security lvl: 6.8235
+
+M = 11441
+Slots: 224
+Security lvl: 46.9747
+
+M = 11627
+Slots: 300
+Security lvl: 21.41
+
+M = 12099
+Slots: 216
+Security lvl: 3.60873
+
+M = 12291
+Slots: 320
+Security lvl: 2.24996
+
+M = 12483
+Slots: 432
+Security lvl: 3.44645
+
+M = 12753
+Slots: 216
+Security lvl: 3.50629
+
+M = 12987
+Slots: 216
+Security lvl: 3.61439
+
+M = 13107
+Slots: 512
+Security lvl: 9.58893
+
+M = 13175
+Slots: 240
+Security lvl: 30.3071
+
+M = 13367
+Slots: 326
+Security lvl: 85.1509
+
+M = 13505
+Slots: 288
+Security lvl: 41.1754
+
+M = 13571
+Slots: 220  ########################## 1 unna 6 round 80bit sec
+Security lvl: 82.8812
+
+M = 13655
+Slots: 210
+Security lvl: 49.3349
+
+M = 13747
+Slots: 232
+Security lvl: 86.4342
+
+M = 13797
+Slots: 432
+Security lvl: 3.42336
+
+M = 13923
+Slots: 288
+Security lvl: -9.10984
+
+M = 13981
+Slots: 600
+Security lvl: 65.1876
+
+M = 14043
+Slots: 300
+Security lvl: 21.4091
+
+M = 14329
+Slots: 352
+Security lvl: 59.5848
+
+M = 14351
+Slots: 504
+Security lvl: 96.1005
+
+M = 14491
+Slots: 336
+Security lvl: 96.2296
+
+M = 14497
+Slots: 324
+Security lvl: 60.2754
+
+M = 14531
+Slots: 220
+Security lvl: 82.675
+
+M = 14577
+Slots: 336
+Security lvl: 27.3917
+
+M = 14715
+Slots: 216
+Security lvl: 3.69508
+
+M = 14763
+Slots: 216
+Security lvl: 3.55426
+
+M = 14949
+Slots: 300
+Security lvl: 21.3252
+
+M = 15001
+Slots: 252
+Security lvl: 77.7204
+
+M = 15183
+Slots: 360
+Security lvl: 16.1771
+
+M = 15561
+Slots: 216
+Security lvl: 3.55234
+
+M = 15665
+Slots: 480
+Security lvl: 58.2291
+
+M = 15709
+Slots: 682
+Security lvl: 109.072
+
+M = 15841
+Slots: 288
+Security lvl: 79.1822
+
+M = 16021
+Slots: 216
+Security lvl: 117.236
+
+M = 16257
+Slots: 258
+Security lvl: 48.415
+
+M = 16383
+Slots: 756
+Security lvl: 44.6538
+
+M = 16385
+Slots: 448
+Security lvl: 72.9448
+
+M = 16513
+Slots: 672
+Security lvl: 96.088
+
+M = 16523
+Slots: 240
+Security lvl: 100.399
+
+M = 16705
+Slots: 256
+Security lvl: 69.4283
+
+M = 16775
+Slots: 200
+Security lvl: 65.1623
+
+M = 16835
+Slots: 288
+Security lvl: 41.2958
+
+M = 17173
+Slots: 264
+Security lvl: 121.597
+
+M = 17391
+Slots: 240
+Security lvl: 30
+
+M = 17425
+Slots: 320
+Security lvl: 77.0841
+
+M = 17507
+Slots: 240
+Security lvl: 100.56
+
+M = 17593
+Slots: 240
+Security lvl: 142.28
+
+M = 17955
+Slots: 216
+Security lvl: 3.56445
+
+M = 18031
+Slots: 432
+Security lvl: 117.031
+
+M = 18205
+Slots: 220
+Security lvl: 82.9195
+
+M = 18415
+Slots: 504
+Security lvl: 96.3192
+
+M = 18573
+Slots: 200
+Security lvl: 65.291
+
+M = 18577
+Slots: 204
+Security lvl: 140.255
+
+M = 18631
+Slots: 720
+Security lvl: 152.696
+
+M = 18639
+Slots: 324
+Security lvl: 60.1394
+
+M = 18669
+Slots: 252
+Security lvl: 44.7458
+
+M = 18705
+Slots: 336
+Security lvl: 27.3853
+
+M = 18907
+Slots: 432
+Security lvl: 116.958
+
+M = 18963
+Slots: 252
+Security lvl: 44.6133
+
+M = 18981
+Slots: 324
+Security lvl: 60.3678
+
+M = 19065
+Slots: 480
+Security lvl: 30.1972
+
+M = 19117
+Slots: 210
+Security lvl: 129.31
+
+M = 19561
+Slots: 420
+Security lvl: 166.2
+
+M = 19811
+Slots: 360
+Security lvl: 152.739
+
+M = 19825
+Slots: 240
+Security lvl: 100.124
+
+M = 19833
+Slots: 240
+Security lvl: 65.1357
+
+M = 19929
+Slots: 288
+Security lvl: 41.3497
+
+M = 19951
+Slots: 280
+Security lvl: 176.271
+
+M = 20165
+Slots: 432
+Security lvl: 117.098
+
+M = 20191
+Slots: 330
+Security lvl: 179.261
+
+M = 20263
+Slots: 352
+Security lvl: 172.659
+
+M = 20485
+Slots: 640
+Security lvl: 114.261
+
+M = 20601
+Slots: 324
+Security lvl: 60.3526
+
+M = 20801
+Slots: 300
+Security lvl: 153.016
+
+M = 20805
+Slots: 288
+Security lvl: 41.4055
+
+M = 20853
+Slots: 396
+Security lvl: 63.6567
+
+M = 20857
+Slots: 316
+Security lvl: 194.532
+
+M = 21199
+Slots: 336
+Security lvl: 164.858
+
+M = 21231
+Slots: 288
+Security lvl: 66.6305
+
+M = 21255
+Slots: 288
+Security lvl: 41.4385
+
+M = 21437
+Slots: 384
+Security lvl: 159.185
+
+M = 21483
+Slots: 360
+Security lvl: 47.9037
+
+M = 21515
+Slots: 264
+Security lvl: 121.166
+
+M = 21593
+Slots: 300
+Security lvl: 152.699
+
+M = 21607
+Slots: 480
+Security lvl: 170.304
+
+M = 21645
+Slots: 288
+Security lvl: 41.4652
+
+M = 21845
+Slots: 1024
+Security lvl: 129.203
+
+M = 21931
+Slots: 720
+Security lvl: 142.384
+
+M = 22165
+Slots: 240
+Security lvl: 100.265
+
+M = 22509
+Slots: 240
+Security lvl: 100.456
+
+M = 22895
+Slots: 240
+Security lvl: 142.337
+
+M = 22939
+Slots: 224
+Security lvl: 164.446
+
+M = 22995
+Slots: 288
+Security lvl: 41.6041
+
+M = 23001
+Slots: 320
+Security lvl: 76.9695
+
+M = 23205
+Slots: 384
+Security lvl: 24.6313
+
+M = 23279
+Slots: 206
+Security lvl: 230.166
+
+M = 23311
+Slots: 518
+Security lvl: 230.536
+
+M = 23343
+Slots: 300
+Security lvl: 109.096
+
+M = 23377
+Slots: 480
+Security lvl: 226.455
+
+M = 23387
+Slots: 384
+Security lvl: 159.108
+
+M = 23405
+Slots: 300
+Security lvl: 152.716
+
+M = 23485
+Slots: 240
+Security lvl: 100.335
+
+M = 23555
+Slots: 336
+Security lvl: 125.82
+
+M = 23579
+Slots: 288
+Security lvl: 192.825
+
+M = 23871
+Slots: 432
+Security lvl: 117.076
+
+M = 23927
+Slots: 224   ##################### 5 unna 219, 6 round 80 bit sec
+Security lvl: 233.831
+
+M = 24089
+Slots: 288
+Security lvl: 193.107
+
+M = 24163
+Slots: 264
+Security lvl: 236.833
+
+M = 24195
+Slots: 248
+Security lvl: 78.424
+
+M = 24211
+Slots: 300
+Security lvl: 196.824
+
+M = 24295
+Slots: 672
+Security lvl: 164.625
+
+M = 24309
+Slots: 432
+Security lvl: 117.001
+
+M = 24573
+Slots: 630
+Security lvl: 129.149
+
+M = 24579
+Slots: 210
+Security lvl: 129.137
+
+M = 24583
+Slots: 360
+Security lvl: 205.117
+
+M = 24601
+Slots: 384
+Security lvl: 243.288
+
+M = 24605
+Slots: 432
+Security lvl: 117.348
+
+M = 24641
+Slots: 240
+Security lvl: 240.315
+
+M = 24681
+Slots: 216
+Security lvl: 117.217
+
+M = 24735
+Slots: 256
+Security lvl: 69.1363
+
+M = 24825
+Slots: 220
+Security lvl: 82.8358
+
+M = 24893
+Slots: 240
+Security lvl: 205.199
+
+M = 24915
+Slots: 200
+Security lvl: 65.1706
+
+M = 24929
+Slots: 512
+Security lvl: 248.73
+
+M = 24963
+Slots: 312
+Security lvl: 126.827
+
+M = 25025
+Slots: 240
+Security lvl: 100.138
+
+M = 25305
+Slots: 480
+Security lvl: 58.2087
+
+M = 25351
+Slots: 250
+Security lvl: 254.54
+
+M = 25389
+Slots: 216
+Security lvl: 79.4829
+
+M = 25487
+Slots: 660
+Security lvl: 179.417
+
+M = 25575
+Slots: 600
+Security lvl: 65.4795
+
+M = 25623
+Slots: 432
+Security lvl: 117.083
+
+M = 25781
+Slots: 252
+Security lvl: 199.568
+
+M = 25935
+Slots: 288
+Security lvl: 41.3065
+
+M = 26133
+Slots: 240
+Security lvl: 135.324
+
+M = 26169
+Slots: 240
+Security lvl: 100.319
+
+M = 26247
+Slots: 336
+Security lvl: 125.498
+
+M = 26269
+Slots: 360
+Security lvl: 268.564
+
+M = 26317
+Slots: 387
+Security lvl: 274.576
+
+M = 26425
+Slots: 300
+Security lvl: 152.749
+
+M = 26481
+Slots: 288
+Security lvl: 91.7945
+
+M = 26691
+Slots: 240
+Security lvl: 100.369
+
+M = 26751
+Slots: 240
+Security lvl: 142.32
+
+M = 26923
+Slots: 648
+Security lvl: 230.14
+
+M = 26985
+Slots: 256
+Security lvl: 69.612
+
+M = 27051
+Slots: 252
+Security lvl: 147.506
+
+M = 27095
+Slots: 258
+Security lvl: 206.87
+
+M = 27279
+Slots: 216
+Security lvl: 117.171
+
+M = 27305
+Slots: 756
+Security lvl: 199.007
+
+M = 27311
+Slots: 480
+Security lvl: 275.412
+
+M = 27391
+Slots: 252
+Security lvl: 199.172
+
+M = 27393
+Slots: 396
+Security lvl: 144.304
+
+M = 27417
+Slots: 432
+Security lvl: 117.26
+
+M = 27421
+Slots: 248
+Security lvl: 266.732
+
+M = 27511
+Slots: 400
+Security lvl: 240.431
+
+M = 27559
+Slots: 216
+Security lvl: 221.159
+
+M = 27633
+Slots: 300
+Security lvl: 152.99
+
+M = 27685
+Slots: 224
+Security lvl: 164.785
+
+M = 27741
+Slots: 264
+Security lvl: 121.307
+
+M = 27755
+Slots: 288
+Security lvl: 142.64
+
+M = 27775
+Slots: 200
+Security lvl: 181.949
+
+M = 28145
+Slots: 288
+Security lvl: 193.107
+
+M = 28197
+Slots: 720 #######################stor nok for 6 round 256-bit sec (eller? security lvl 142) 
+Security lvl: 142.323
+
+M = 28231
+Slots: 648
+Security lvl: 230.709
+
+M = 28237
+Slots: 200
+Security lvl: 240.571
+
+M = 28365
+Slots: 240
+Security lvl: 100.426
+
+M = 28413
+Slots: 240
+Security lvl: 100.088
+
+M = 28679
+Slots: 960
+Security lvl: 226.36
+
+M = 28815
+Slots: 256
+Security lvl: 99.3861
+
+M = 28985
+Slots: 480
+Security lvl: 170.483
+
+M = 29041
+Slots: 256
+Security lvl: 308.73
+
+M = 29127
+Slots: 864
+Security lvl: 117.146
+
+M = 29157
+Slots: 226  ####################close til 6 round 80-bit key
+Security lvl: 174.148
+
+M = 29191
+Slots: 278
+Security lvl: 316.806
+
+M = 29239
+Slots: 288
+Security lvl: 255.529
+
+M = 29315
+Slots: 320
+Security lvl: 170.512
+
+M = 29319
+Slots: 224 ################## close til 6 round 80-bit key
+Security lvl: 164.731
+
+M = 29393
+Slots: 288
+Security lvl: 192.95
+
+M = 29445
+Slots: 240
+Security lvl: 100.165
+
+M = 29493
+Slots: 224
+Security lvl: 164.696
+
+M = 29757
+Slots: 432
+Security lvl: 117.028
+
+M = 30005
+Slots: 256
+Security lvl: 219.01
+
+M = 30009
+Slots: 204
+Security lvl: 140.162
+
+M = 30041
+Slots: 210
+Security lvl: 288.519
+
+M = 30069
+Slots: 384
+Security lvl: 159.261
+
+M = 30121
+Slots: 396
+Security lvl: 237.01
+
+M = 30195
+Slots: 240
+Security lvl: 100.375
+
+M = 30225
+Slots: 240
+Security lvl: 100.517
+
+M = 30269
+Slots: 329 ################################ Oddetall???? 2 unna 327 slots for 4,5 runder 80-bit 
+Security lvl: 331.943
+
+M = 30285
+Slots: 336 
+Security lvl: 125.705
+
+M = 30303
+Slots: 432
+Security lvl: 117.094
+
+M = 30349
+Slots: 240
+Security lvl: 275.505
+
+M = 30353
+Slots: 252
+Security lvl: 327.945
+
+M = 30555
+Slots: 288
+Security lvl: 91.8674
+
+M = 30583
+Slots: 512
+Security lvl: 248.709
+
+M = 30667
+Slots: 288
+Security lvl: 243.385
+
+M = 30705
+Slots: 352
+Security lvl: 116.058
+
+M = 30783
+Slots: 660
+Security lvl: 179.327
+
+M = 30873
+Slots: 200
+Security lvl: 181.726
+
+M = 30955
+Slots: 400
+Security lvl: 240.409
+
+M = 31031
+Slots: 360
+Security lvl: 205.302
+
+M = 31065
+Slots: 432
+Security lvl: 116.744
+
+M = 31115
+Slots: 252
+Security lvl: 199.088
+
+M = 31375
+Slots: 250
+Security lvl: 254.969
+
+M = 31417
+Slots: 352
+Security lvl: 342.282
+
+M = 31559
+Slots: 300
+Security lvl: 284.509
+
+M = 31609
+Slots: 432
+Security lvl: 344.17
+
+M = 31611
+Slots: 256
+Security lvl: 189.359
+
+M = 31621
+Slots: 306
+Security lvl: 345.885
+
+M = 31635
+Slots: 432
+Security lvl: 117.235
+
+M = 31695
+Slots: 384
+Security lvl: 136.933
+
+M = 31753
+Slots: 224
+Security lvl: 347.91
+
+M = 31775
+Slots: 1200
+Security lvl: 240.22
+
+M = 32021
+Slots: 200
+Security lvl: 298.885
+
+M = 32025
+Slots: 240
+Security lvl: 100.318
+
+M = 32039
+Slots: 264
+Security lvl: 272.071
+
+M = 32053
+Slots: 360
+Security lvl: 268.667
+
+M = 32147
+Slots: 240
+Security lvl: 311.005
+
+M = 32175
+Slots: 240
+Security lvl: 100.397
+
+M = 32361
+Slots: 264
+Security lvl: 144.495
+
+M = 32377
+Slots: 568
+Security lvl: 362.93
+
+M = 32385
+Slots: 288
+Security lvl: 125.545
+
+M = 32513
+Slots: 480
+Security lvl: 311.06
+
+M = 32535
+Slots: 240
+Security lvl: 142.376
+
+M = 32639
+Slots: 288
+Security lvl: 361.466
+
+M = 32681
+Slots: 270
+Security lvl: 323.954
+
+M = 32691
+Slots: 320
+Security lvl: 188.985
+
+M = 32767
+Slots: 1800
+Security lvl: 284.119
+
+M = 32769
+Slots: 660
+Security lvl: 179.221
+
+M = 33025
+Slots: 440
+Security lvl: 275.984
+
+M = 33055
+Slots: 240
+Security lvl: 240.801
+
+M = 33069
+Slots: 240
+Security lvl: 205.323
+
+M = 33147
+Slots: 252
+Security lvl: 199.635
+
+M = 33215
+Slots: 576
+Security lvl: 192.824
+
+M = 33227
+Slots: 222
+Security lvl: 369.511
+
+M = 33345
+Slots: 432
+Security lvl: 117.219
+
+M = 33357
+Slots: 218
+Security lvl: 214.966
+
+M = 33371
+Slots: 240
+Security lvl: 310.169
+
+M = 33507
+Slots: 288
+Security lvl: 192.516
+
+M = 33579
+Slots: 288
+Security lvl: 142.343
+
+M = 33583
+Slots: 420
+Security lvl: 319.048
+
+M = 33745
+Slots: 288
+Security lvl: 260.181
+
+M = 33825
+Slots: 800
+Security lvl: 123.724
+
+M = 33975
+Slots: 300
+Security lvl: 152.869
+
+Biggest slot number: 1800
+With m = 32767

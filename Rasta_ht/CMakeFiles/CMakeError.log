@@ -1,0 +1,110 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/hakon/HElib/Rasta_ht/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3498c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3498c.dir/build.make CMakeFiles/cmTC_3498c.dir/build
+make[1]: Entering directory '/home/hakon/HElib/Rasta_ht/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3498c.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_3498c.dir/CheckSymbolExists.cxx.o -c /home/hakon/HElib/Rasta_ht/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_3498c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3498c.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_3498c.dir/CheckSymbolExists.cxx.o  -o cmTC_3498c 
+CMakeFiles/cmTC_3498c.dir/CheckSymbolExists.cxx.o: In function `main':
+CheckSymbolExists.cxx:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3498c.dir/build.make:97: recipe for target 'cmTC_3498c' failed
+make[1]: *** [cmTC_3498c] Error 1
+make[1]: Leaving directory '/home/hakon/HElib/Rasta_ht/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3498c/fast' failed
+make: *** [cmTC_3498c/fast] Error 2
+
+File /home/hakon/HElib/Rasta_ht/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/hakon/HElib/Rasta_ht/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_517c8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_517c8.dir/build.make CMakeFiles/cmTC_517c8.dir/build
+make[1]: Entering directory '/home/hakon/HElib/Rasta_ht/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_517c8.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_517c8.dir/CheckFunctionExists.cxx.o -c /home/hakon/HElib/Rasta_ht/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_517c8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_517c8.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_517c8.dir/CheckFunctionExists.cxx.o  -o cmTC_517c8 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_517c8.dir/build.make:97: recipe for target 'cmTC_517c8' failed
+make[1]: *** [cmTC_517c8] Error 1
+make[1]: Leaving directory '/home/hakon/HElib/Rasta_ht/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_517c8/fast' failed
+make: *** [cmTC_517c8/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/hakon/Rasta_ht/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e2feb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e2feb.dir/build.make CMakeFiles/cmTC_e2feb.dir/build
+make[1]: Entering directory '/home/hakon/Rasta_ht/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e2feb.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_e2feb.dir/CheckSymbolExists.cxx.o -c /home/hakon/Rasta_ht/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_e2feb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2feb.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_e2feb.dir/CheckSymbolExists.cxx.o  -o cmTC_e2feb 
+CMakeFiles/cmTC_e2feb.dir/CheckSymbolExists.cxx.o: In function `main':
+CheckSymbolExists.cxx:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e2feb.dir/build.make:97: recipe for target 'cmTC_e2feb' failed
+make[1]: *** [cmTC_e2feb] Error 1
+make[1]: Leaving directory '/home/hakon/Rasta_ht/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e2feb/fast' failed
+make: *** [cmTC_e2feb/fast] Error 2
+
+File /home/hakon/Rasta_ht/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/hakon/Rasta_ht/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_43051/fast"
+/usr/bin/make -f CMakeFiles/cmTC_43051.dir/build.make CMakeFiles/cmTC_43051.dir/build
+make[1]: Entering directory '/home/hakon/Rasta_ht/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_43051.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_43051.dir/CheckFunctionExists.cxx.o -c /home/hakon/Rasta_ht/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_43051
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43051.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_43051.dir/CheckFunctionExists.cxx.o  -o cmTC_43051 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_43051.dir/build.make:97: recipe for target 'cmTC_43051' failed
+make[1]: *** [cmTC_43051] Error 1
+make[1]: Leaving directory '/home/hakon/Rasta_ht/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_43051/fast' failed
+make: *** [cmTC_43051/fast] Error 2
+
+

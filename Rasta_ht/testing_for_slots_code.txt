@@ -1,0 +1,77 @@
+ //######################## before testing for slots ######################################
+
+/*
+  //test number of slots created
+  std::cout << "############ nr of slots created ##########" << std::endl;
+
+  
+
+  int n = 12000;
+  long max_slots = 0;
+  int temp_m = 0;  
+  std::ofstream myfile;
+  myfile.open("M_with_200_slots.txt");
+
+  for(int i = 0; i<=n; i++){
+    m += 2;
+    //std::cout << "Initialising context object..." << std::endl;
+    FHEcontext context1(m,p,r);
+    // Modify the context, adding primes to the modulus chain
+    //std::cout  << "Building modulus chain..." << std::endl;
+    buildModChain(context1,bits,c);
+    std::cout << "size of m: " << m << std::endl;
+
+    // Print the context
+    //context1.zMStar.printout();
+    //std::cout << std::endl;
+
+    // Print the security level
+    std::cout << "Security: " << context1.securityLevel() << std::endl;
+
+    // Secret key management
+    //std::cout << "Creating secret key..." << std::endl;
+    // Create a secret key associated with the context
+    //#FHESecKey secret_key(context1);
+    // Generate the secret key
+    //#secret_key.GenSecKey();
+    //std::cout << "Generating key-switching matrices..." << std::endl;
+    // Compute key-switching matrices that we need
+    //#addSome1DMatrices(secret_key);
+    
+    // Public key management
+    // Set the secret key (upcast: FHESecKey is a subclass of FHEPubKey)
+    //#const FHEPubKey& public_key = secret_key;
+    
+    // Get the EncryptedArray of the context
+    const EncryptedArray& ea = *(context1.ea);
+    
+    // Get the number of slot (phi(m))
+    long nslots1 = ea.size();
+    std::cout << "Number of slots: " << nslots1 << std::endl; //()så mange slots som mulig? //baseres på m? 
+
+    if(nslots1 >max_slots){
+      
+      max_slots = nslots1;
+      temp_m = m;
+    }
+    if(nslots1 >= 200){
+      //write all M values which secures amount of slots >= 200
+      int x = 0;
+      myfile << "M = " << m << "\n";
+      myfile << "Slots: " << nslots1 << "\n";
+      myfile << "Security lvl: " << context1.securityLevel() << "\n";
+      myfile << "\n";
+    }
+
+  }
+
+
+  
+  myfile << "Biggest slot number: " << max_slots << "\n";
+  myfile << "With m = " << temp_m << "\n";
+  myfile.close();
+
+  std::cout<< "biggest slot number: " << max_slots << std::endl;
+  std::cout<< "with m =             " << temp_m << std::endl;
+  
+  */

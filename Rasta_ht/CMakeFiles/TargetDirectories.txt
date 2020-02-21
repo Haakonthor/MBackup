@@ -1,0 +1,3 @@
+/home/hakon/Rasta_ht/CMakeFiles/rebuild_cache.dir
+/home/hakon/Rasta_ht/CMakeFiles/Rasta_ht.dir
+/home/hakon/Rasta_ht/CMakeFiles/edit_cache.dir
