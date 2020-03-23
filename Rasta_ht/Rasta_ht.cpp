@@ -6,13 +6,18 @@
 #include <NTL/BasicThreadPool.h>
 #include "MyMatMulFull.h"
 #include "readConstant.h"
+#include "Non_singular_matrix_generation.h"
 //#include "matrix.cpp"
 //#include "MyMatMulFull.h"
 //#include <NTL/RR.h>
 
 
 
+
+
 int main(int argc, char *argv[]) {
+
+
 
   /*  Example of BGV scheme  */
 
@@ -83,7 +88,7 @@ int main(int argc, char *argv[]) {
   Ctxt ctxt2(public_key);
 
   // Print the plaintext
-  //std::cout << "Initial Ptxt1:   " << ptxt1 << std::endl;
+  //std::cout << "Initial Ptxt1:  " << ptxt1 << std::endl;
   //std::cout << "Initial Ptxt2:  " << ptxt2 << std::endl;
   
   //original cipher text
@@ -146,23 +151,21 @@ int main(int argc, char *argv[]) {
   ea.decrypt(ctxt2, secret_key, ptxt2);
   std::cout << "ptxt2*M+constants = \n" << ptxt2 << std::endl;
   
-/*
+
   std::vector<long> shiftedptxt2_once = ptxt2;
   std::vector<long> shiftedptxt2_twice = ptxt2;
 
   Ctxt temp1 = ctxt2;
-  Ctxt temp2 = ctxt2;
-
-  cyclicBitShift(temp1,ea,1);
-  cyclicBitShift(temp2,ea,2);
+  cyclicBitShift(temp1,ea);
+  Ctxt temp2 = temp1;
+  cyclicBitShift(temp2,ea);
 
   ea.decrypt(temp1, secret_key, shiftedptxt2_once);
   ea.decrypt(temp2, secret_key, shiftedptxt2_twice);
 
   std::cout<< "ptxt2 shifted once: \n" << shiftedptxt2_once << std::endl;
   std::cout<< "ptxt2 shifted twice: \n" << shiftedptxt2_twice << std::endl;
-*/
-  
+
 
   
   //cyclicBitShift(ctxt2, ea, 1);
@@ -173,11 +176,15 @@ int main(int argc, char *argv[]) {
   cout << endl;
   cout << endl;
   std::cout << "Using keccak" << std::endl;
-  //keccak_chi(ctxt2, ea); //#######################################
+  keccak_chi(ctxt2, ea); //#######################################
 
   ea.decrypt(ctxt2, secret_key, ptxt2);
   std::cout << "ptxt2*M+constant + cyclicshift keccak = \n"<< ptxt2 << std::endl;  
 
+
+  
+
+  
 
   
 

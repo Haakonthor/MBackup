@@ -11,7 +11,7 @@ using namespace NTL;
 Mat<ZZ> readMatrixFromFile(const char *fname){
     std::ifstream freader;
     int i, j;
-    Mat<ZZ> RM;  
+    Mat<ZZ> RM; 
 
     RM.SetDims(16,16);
     freader.open(fname);

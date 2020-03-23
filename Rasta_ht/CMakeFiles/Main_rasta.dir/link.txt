@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/Main_rasta.dir/Rasta_main.cpp.o  -o Main_rasta -Wl,-rpath,/home/hakon/helib_install/helib_pack/lib /home/hakon/helib_install/helib_pack/lib/libhelib.a /home/hakon/helib_install/helib_pack/lib/libntl.so /home/hakon/helib_install/helib_pack/lib/libgmp.so 

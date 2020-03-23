@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/Matrix_gen.dir/generate_NS_matrix.cpp.o  -o Matrix_gen -Wl,-rpath,/home/hakon/helib_install/helib_pack/lib /home/hakon/helib_install/helib_pack/lib/libhelib.a /home/hakon/helib_install/helib_pack/lib/libntl.so /home/hakon/helib_install/helib_pack/lib/libgmp.so 

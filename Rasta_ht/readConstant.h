@@ -8,6 +8,9 @@
 
 NTL_CLIENT
 
+
+
+
 std::vector<long> readConstantsFromFile(const EncryptedArray& ea, const char *fname){
     
     long n = ea.size();
@@ -29,6 +32,9 @@ std::vector<long> readConstantsFromFile(const EncryptedArray& ea, const char *fn
 
 
 void addConstants(Ctxt &c, const EncryptedArray& ea, std::vector<long> constants){
+    /*
+    * adding a full array worth of constants to a ciphertext object, reads constants from a file. 
+    */
     long n = ea.size();
     ZZX emask;
     vector<long> pmask(n, 0);
@@ -39,26 +45,57 @@ void addConstants(Ctxt &c, const EncryptedArray& ea, std::vector<long> constants
     c.addConstant(emask);
 }
 
-void cyclicBitShift(Ctxt &c ,const EncryptedArray& ea){
+void addKey(Ctxt &c, const EncryptedArray& ea, std::vector<long> key){
+    /*
+    * adding a full array worth of constants to a ciphertext object, reads constants from a file. 
+    */
     long n = ea.size();
-    Ctxt t = c
-    ea.rotate(c, 1);
-    ea.rotate(t, 1);
+    ZZX emask;
+    vector<long> pmask(n, 0);
+    for(int i=0; i<n; ++i){ 
+        pmask[i] = (key)[i];
+    } 
+    ea.encode(emask,pmask);
+    c.addConstant(emask);
+}
+
+
+
+
+void cyclicBitShift(Ctxt &c ,const EncryptedArray& ea){
+    /*
+    * working cyclic bitshift for a encrypted array of size 2 more then intented slotsize (eg. 329 for 327)
+    */
+    long n = ea.size();
+    //std::vector<long> h1Arr = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0};
+    //std::vector<long> h2Arr = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0};
+    std::vector<long> h1Arr(n,0);
+    std::vector<long> h2Arr(n,1); 
+    h1Arr[n-2] = 1;
+    h2Arr[n-1] = 0;
+    h2Arr[n-2] = 0; 
     
-    
-    std::vector<long> h1Arr = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0};
-    std::vector<long> h2Arr = {1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0};
     ZZX h1;
     ZZX h2;
     ea.encode(h1, h1Arr);
     ea.encode(h2, h2Arr);
 
-    t *= h1;
-    Ctxt s = t;
-    ea.rotate(s,2);
-    c += s; 
-    c *= h2; 
+
+    ea.rotate(c, 1);
+    Ctxt t = c;
+    t.multByConstant(h1);
+
+    //Ctxt s = t;
+    ea.rotate(t,2);
+    c += t;
+    c.multByConstant(h2);    
 }
+
+void generate_matrix(){
+    
+}
+
+
 
 void keccak_chi(Ctxt &c, const EncryptedArray& ea){
     Ctxt temp1 = c; 

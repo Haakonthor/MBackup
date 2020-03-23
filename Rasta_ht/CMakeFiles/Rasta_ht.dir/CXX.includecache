@@ -10,6 +10,14 @@
 stdio.h
 -
 
+/home/hakon/Rasta_ht/Non_singular_matrix_generation.h
+cassert
+-
+cstdio
+-
+iostream
+-
+
 /home/hakon/Rasta_ht/Rasta_ht.cpp
 iostream
 -
@@ -27,6 +35,8 @@ MyMatMulFull.h
 /home/hakon/Rasta_ht/MyMatMulFull.h
 readConstant.h
 /home/hakon/Rasta_ht/readConstant.h
+Non_singular_matrix_generation.h
+/home/hakon/Rasta_ht/Non_singular_matrix_generation.h
 
 /home/hakon/Rasta_ht/readConstant.h
 stdio.h

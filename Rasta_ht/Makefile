@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/hakon/Rasta_ht
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Main_rasta
+
+# Build rule for target.
+Main_rasta: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Main_rasta
+.PHONY : Main_rasta
+
+# fast build rule for target.
+Main_rasta/fast:
+	$(MAKE) -f CMakeFiles/Main_rasta.dir/build.make CMakeFiles/Main_rasta.dir/build
+.PHONY : Main_rasta/fast
+
+#=============================================================================
 # Target rules for targets named Rasta_ht
 
 # Build rule for target.
@@ -122,6 +135,19 @@ Rasta_ht: cmake_check_build_system
 Rasta_ht/fast:
 	$(MAKE) -f CMakeFiles/Rasta_ht.dir/build.make CMakeFiles/Rasta_ht.dir/build
 .PHONY : Rasta_ht/fast
+
+#=============================================================================
+# Target rules for targets named Matrix_gen
+
+# Build rule for target.
+Matrix_gen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Matrix_gen
+.PHONY : Matrix_gen
+
+# fast build rule for target.
+Matrix_gen/fast:
+	$(MAKE) -f CMakeFiles/Matrix_gen.dir/build.make CMakeFiles/Matrix_gen.dir/build
+.PHONY : Matrix_gen/fast
 
 Rasta_ht.o: Rasta_ht.cpp.o
 
@@ -150,18 +176,80 @@ Rasta_ht.cpp.s:
 	$(MAKE) -f CMakeFiles/Rasta_ht.dir/build.make CMakeFiles/Rasta_ht.dir/Rasta_ht.cpp.s
 .PHONY : Rasta_ht.cpp.s
 
+Rasta_main.o: Rasta_main.cpp.o
+
+.PHONY : Rasta_main.o
+
+# target to build an object file
+Rasta_main.cpp.o:
+	$(MAKE) -f CMakeFiles/Main_rasta.dir/build.make CMakeFiles/Main_rasta.dir/Rasta_main.cpp.o
+.PHONY : Rasta_main.cpp.o
+
+Rasta_main.i: Rasta_main.cpp.i
+
+.PHONY : Rasta_main.i
+
+# target to preprocess a source file
+Rasta_main.cpp.i:
+	$(MAKE) -f CMakeFiles/Main_rasta.dir/build.make CMakeFiles/Main_rasta.dir/Rasta_main.cpp.i
+.PHONY : Rasta_main.cpp.i
+
+Rasta_main.s: Rasta_main.cpp.s
+
+.PHONY : Rasta_main.s
+
+# target to generate assembly for a file
+Rasta_main.cpp.s:
+	$(MAKE) -f CMakeFiles/Main_rasta.dir/build.make CMakeFiles/Main_rasta.dir/Rasta_main.cpp.s
+.PHONY : Rasta_main.cpp.s
+
+generate_NS_matrix.o: generate_NS_matrix.cpp.o
+
+.PHONY : generate_NS_matrix.o
+
+# target to build an object file
+generate_NS_matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/Matrix_gen.dir/build.make CMakeFiles/Matrix_gen.dir/generate_NS_matrix.cpp.o
+.PHONY : generate_NS_matrix.cpp.o
+
+generate_NS_matrix.i: generate_NS_matrix.cpp.i
+
+.PHONY : generate_NS_matrix.i
+
+# target to preprocess a source file
+generate_NS_matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/Matrix_gen.dir/build.make CMakeFiles/Matrix_gen.dir/generate_NS_matrix.cpp.i
+.PHONY : generate_NS_matrix.cpp.i
+
+generate_NS_matrix.s: generate_NS_matrix.cpp.s
+
+.PHONY : generate_NS_matrix.s
+
+# target to generate assembly for a file
+generate_NS_matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/Matrix_gen.dir/build.make CMakeFiles/Matrix_gen.dir/generate_NS_matrix.cpp.s
+.PHONY : generate_NS_matrix.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... Rasta_ht"
 	@echo "... edit_cache"
+	@echo "... Main_rasta"
+	@echo "... Rasta_ht"
+	@echo "... rebuild_cache"
+	@echo "... Matrix_gen"
 	@echo "... Rasta_ht.o"
 	@echo "... Rasta_ht.i"
 	@echo "... Rasta_ht.s"
+	@echo "... Rasta_main.o"
+	@echo "... Rasta_main.i"
+	@echo "... Rasta_main.s"
+	@echo "... generate_NS_matrix.o"
+	@echo "... generate_NS_matrix.i"
+	@echo "... generate_NS_matrix.s"
 .PHONY : help
 
 
