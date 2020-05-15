@@ -29,6 +29,34 @@ std::vector<long> readConstantsFromFile(const EncryptedArray& ea, const char *fn
     
     return constants; 
 }
+ //test method to read severa lines form a file
+
+std::vector<std::vector<long>> readConstantsFromFile_all(const EncryptedArray& ea, const char*fname){
+    long n = ea.size();
+    FILE *fp;
+    int i,j, bb;
+    vector<long> tempData(n,0);
+    vector<vector<long>> constants;
+    constants.resize(n);
+    for(i=0; i<n; ++i){
+        constants[i].resize(n);
+    }
+
+
+    fp = fopen(fname,"r");
+    if(fp == NULL) {cout<<"could not find constants" << endl; exit(0);}
+    for(j=0; j<10; ++j){
+        for(i=0; i<n; ++i){
+            
+            fscanf(fp, "%d", &bb);
+            tempData[i] = bb;
+        }
+        constants[j] = tempData;
+    }
+    fclose(fp);
+    
+    return constants; 
+}
 
 
 void addConstants(Ctxt &c, const EncryptedArray& ea, std::vector<long> constants){
@@ -91,11 +119,6 @@ void cyclicBitShift(Ctxt &c ,const EncryptedArray& ea){
     c.multByConstant(h2);    
 }
 
-void generate_matrix(){
-    
-}
-
-
 
 void keccak_chi(Ctxt &c, const EncryptedArray& ea){
     Ctxt temp1 = c; 
@@ -118,36 +141,3 @@ void shiftBits(Ctxt &c){
     ////In C++, you do ((n % M) + M) % M (if u wanna do mod on negative numbers) obsolete
 }
 */
-
-/*
-std::vector<long> cyclic_shift(const std::vector<long> &input, Const EncryptedArray& ea, int shift){
-    long n = ea.size();
-    std::vector<long> output = input << shift;
-    //output ^= (input >>(n - shift));
-    return output; 
-}
-*/
-
-
-/*
-std::vector<ZZ> readConstantsFromFile2(const EncryptedArray& ea,const char *fname){
-    long n = ea.size();
-    //RBak bak; bak.save(); ea.getContext().alMod.restoreContext();
-    FILE *fp;
-    int i, bb; 
-    std::vector<ZZ> constants;
-
-    //constants.resize(n);
-    //for() //might need a loop to resize, but dont think so. 
-
-    fp = fopen(fname,"r");
-    if(fp == NULL) {cout<<"could not find constants"<< endl; exit(0);}
-    for(i = 0; i<n; ++i){
-        fscanf(fp, "%d", &bb);
-        constants = GF2X(bb);
-    }
-    fclose(fp)
-
-
-}
-    */

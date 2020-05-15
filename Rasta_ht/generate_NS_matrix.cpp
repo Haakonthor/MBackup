@@ -45,7 +45,7 @@ void writeConstToFile(vector<long>& v, const char *fname){
     myfile.close();
 }
 
-void generateConstants(vector<long>& v){
+void generateConstants(vector<long>& v){ //pseudo random generation of constants
     long n = v.size();
     for(int i=0; i< n-2; i++){
         long r = rand() %2; 
@@ -92,7 +92,7 @@ int main(){
     //generate 10 string of constant (will only need 5 or 6)
     for(int i = 0; i < 10; i++){
         generateConstants(myConst);
-        writeConstToFile(myConst, "constants329.txt"); //uncomment to recreate new constants in file
+       // writeConstToFile(myConst, "constants329.txt"); //uncomment to recreate new constants in file
     }
 
 
