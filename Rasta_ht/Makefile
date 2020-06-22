@@ -124,17 +124,17 @@ Main_rasta/fast:
 .PHONY : Main_rasta/fast
 
 #=============================================================================
-# Target rules for targets named Rasta_ht
+# Target rules for targets named test_Rasta_ht
 
 # Build rule for target.
-Rasta_ht: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Rasta_ht
-.PHONY : Rasta_ht
+test_Rasta_ht: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_Rasta_ht
+.PHONY : test_Rasta_ht
 
 # fast build rule for target.
-Rasta_ht/fast:
-	$(MAKE) -f CMakeFiles/Rasta_ht.dir/build.make CMakeFiles/Rasta_ht.dir/build
-.PHONY : Rasta_ht/fast
+test_Rasta_ht/fast:
+	$(MAKE) -f CMakeFiles/test_Rasta_ht.dir/build.make CMakeFiles/test_Rasta_ht.dir/build
+.PHONY : test_Rasta_ht/fast
 
 #=============================================================================
 # Target rules for targets named Matrix_gen
@@ -155,7 +155,7 @@ Rasta_ht.o: Rasta_ht.cpp.o
 
 # target to build an object file
 Rasta_ht.cpp.o:
-	$(MAKE) -f CMakeFiles/Rasta_ht.dir/build.make CMakeFiles/Rasta_ht.dir/Rasta_ht.cpp.o
+	$(MAKE) -f CMakeFiles/test_Rasta_ht.dir/build.make CMakeFiles/test_Rasta_ht.dir/Rasta_ht.cpp.o
 .PHONY : Rasta_ht.cpp.o
 
 Rasta_ht.i: Rasta_ht.cpp.i
@@ -164,7 +164,7 @@ Rasta_ht.i: Rasta_ht.cpp.i
 
 # target to preprocess a source file
 Rasta_ht.cpp.i:
-	$(MAKE) -f CMakeFiles/Rasta_ht.dir/build.make CMakeFiles/Rasta_ht.dir/Rasta_ht.cpp.i
+	$(MAKE) -f CMakeFiles/test_Rasta_ht.dir/build.make CMakeFiles/test_Rasta_ht.dir/Rasta_ht.cpp.i
 .PHONY : Rasta_ht.cpp.i
 
 Rasta_ht.s: Rasta_ht.cpp.s
@@ -173,7 +173,7 @@ Rasta_ht.s: Rasta_ht.cpp.s
 
 # target to generate assembly for a file
 Rasta_ht.cpp.s:
-	$(MAKE) -f CMakeFiles/Rasta_ht.dir/build.make CMakeFiles/Rasta_ht.dir/Rasta_ht.cpp.s
+	$(MAKE) -f CMakeFiles/test_Rasta_ht.dir/build.make CMakeFiles/test_Rasta_ht.dir/Rasta_ht.cpp.s
 .PHONY : Rasta_ht.cpp.s
 
 Rasta_main.o: Rasta_main.cpp.o
@@ -238,8 +238,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... Main_rasta"
-	@echo "... Rasta_ht"
 	@echo "... rebuild_cache"
+	@echo "... test_Rasta_ht"
 	@echo "... Matrix_gen"
 	@echo "... Rasta_ht.o"
 	@echo "... Rasta_ht.i"

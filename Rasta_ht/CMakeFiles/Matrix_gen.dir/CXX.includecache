@@ -21,6 +21,10 @@ fstream
 -
 stdlib.h
 -
+sys/time.h
+-
+sys/resource.h
+-
 
 /home/hakon/helib_install/helib_pack/include/NTL/ALL_FEATURES.h
 NTL/HAVE_ALIGNED_ARRAY.h

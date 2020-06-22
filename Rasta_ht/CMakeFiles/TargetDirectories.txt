@@ -1,5 +1,5 @@
 /home/hakon/Rasta_ht/CMakeFiles/edit_cache.dir
 /home/hakon/Rasta_ht/CMakeFiles/Main_rasta.dir
-/home/hakon/Rasta_ht/CMakeFiles/Rasta_ht.dir
 /home/hakon/Rasta_ht/CMakeFiles/rebuild_cache.dir
+/home/hakon/Rasta_ht/CMakeFiles/test_Rasta_ht.dir
 /home/hakon/Rasta_ht/CMakeFiles/Matrix_gen.dir

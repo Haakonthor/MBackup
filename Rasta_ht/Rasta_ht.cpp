@@ -6,7 +6,8 @@
 #include <NTL/BasicThreadPool.h>
 #include "MyMatMulFull.h"
 #include "readConstant.h"
-#include "Non_singular_matrix_generation.h"
+#include "CyclicRotation_chi.h"
+//#include "Non_singular_matrix_generation.h"
 //#include "matrix.cpp"
 //#include "MyMatMulFull.h"
 //#include <NTL/RR.h>
@@ -17,11 +18,7 @@
 
 int main(int argc, char *argv[]) {
 
-
-
-  /*  Example of BGV scheme  */
-
- 
+  /*  Example of BGV scheme  */ 
   //################ adding c1*c2+c1 ###########################
   // Plaintext prime modulus
   unsigned long p = 2; // p = 2 (mod 2) 
@@ -91,8 +88,6 @@ int main(int argc, char *argv[]) {
   //std::cout << "Initial Ptxt1:  " << ptxt1 << std::endl;
   //std::cout << "Initial Ptxt2:  " << ptxt2 << std::endl;
   
-  //original cipher text
-  //std::cout<< "initial cipher text, 'ctxt'" << ctxt << std::endl;
 
   // Encrypt the plaintext using the public_key
   ea.encrypt(ctxt1, public_key, ptxt1);
@@ -100,15 +95,6 @@ int main(int argc, char *argv[]) {
   //std::cout<<"encrypted ctxt" << ctxt1 << std::endl;
   
   
-
-  // Square the ciphertext
-  //ctxt *= ctxt;
-  // Double it (using additions)
-  //ctxt += ctxt;
-
-  //formula c1*c2 + c1
-  //ctxt2 *= ctxt1;
-  //ctxt2 += ctxt1;
   
 
   // Create a plaintext for decryption
@@ -215,42 +201,6 @@ int main(int argc, char *argv[]) {
   */
 
 
-
-  //##################################################
-
-  /*
-  generere matriser,
-  X=chi funksjon
-  wrappe rundt vectoren riktig for chi funksjonen
-
-  */
- ////lag en "random" matrise, trenger en ny "random" matrise for hver runde
- //std::cout << "random matrisen" << randomMatrix << std::endl; 
-
-  // Generating NTL Matrix From file ######################################################
-  //NTL::Mat<NTL::ZZ> matrixFromTxt = readMatrixFromFile("testm.txt");
-  //std::cout<< testMatrix << std::endl;
-  //std::cout<< "type of testMatrix: " << typeid(testMatrix).name() << std::endl;
-  //#############################################################
-
-  //Try do to something with that matrix
-  //std::cout << "The matrix from my file \n" << matrixFromTxt << std::endl;
-  //std::cout << "Trying to get my matrix into MatMul" << std::endl;
-
-
-  //MatMulFullExec exec_mat1();
-  //MatMulFullExec exec_mat2(matrixFromTxt, bool minimal=false);
-  
-  //std::cout<<"exec1 \n" <<exec_mat1 << std::endl; 
-  //std::cout<<"exec2 \n" <<exec_mat2 << std::endl;
-  
-  //MatMulFullExec exex_mat(matrixFromTxt,false);
-  
-
-  //MatMulFullExec exec_matrix(mat_mul_full_matrix, bool minimal=false);  //this compiles
-  //std::cout << "exec_matrix \n" << exec_matrix << std::endl;
-  
-  //exec_matrix.mul(ctxt1);
 
 
   

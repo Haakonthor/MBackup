@@ -6,13 +6,15 @@
 #include <vector>
 #include <fstream>
 #include <stdlib.h>
+#include <sys/time.h>
+#include <sys/resource.h>
 
 NTL_CLIENT
 
 
 using namespace std;
 
-
+//function to take a matrix and write it to a txt file
 void writeMatToFile(vector<vector<long>>& a, const char *fname){
     
     long n = a.size();
@@ -32,6 +34,7 @@ void writeMatToFile(vector<vector<long>>& a, const char *fname){
 
 
 }
+//writes the constants to a txt file. 
 void writeConstToFile(vector<long>& v, const char *fname){
     long n = v.size();
     ofstream myfile;
@@ -44,7 +47,7 @@ void writeConstToFile(vector<long>& v, const char *fname){
     myfile << endl;
     myfile.close();
 }
-
+//pseudo random generation of constants 
 void generateConstants(vector<long>& v){ //pseudo random generation of constants
     long n = v.size();
     for(int i=0; i< n-2; i++){
@@ -53,7 +56,7 @@ void generateConstants(vector<long>& v){ //pseudo random generation of constants
     }
 
 }
-
+//converts a NTL GF2 matrix to a vector of vectors. 
 void convertGF2_to_vec(mat_GF2& gf2mat, vector<vector<long>>& matrix){
     long n = gf2mat.NumRows();
     //vector<vector<long>> matrix_y(n, vector<long>(n));
@@ -86,44 +89,50 @@ int main(){
      
     mat_GF2 x; 
     GF2 d; 
-    vector<vector<long>> myVec(n+2,vector<long>(n+2));
+
+    double matrix_time = 0; 
+    clock_t matrix_gen_timer_start = clock(); 
+
+    vector<vector<long>> myVec(n+2,vector<long>(n+2)); //creates a n+2xn+2 0 matrix
     vector<long> myConst(n+2,0);
 
-    //generate 10 string of constant (will only need 5 or 6)
-    for(int i = 0; i < 10; i++){
+    int numOfNSMatrices = 0; 
+
+    //generate 10 vectors of constants (will only need 4 to 6)
+    for(int i = 0; i < 5; i++){
         generateConstants(myConst);
        // writeConstToFile(myConst, "constants329.txt"); //uncomment to recreate new constants in file
     }
 
 
     //cout << x << endl; 
-    for (int i = 0; i < 20; i++)
+    //creates matrices and checks if they are non-singular, if they are non-singular they are written to .txt file
+    for (int i = 0; i < 100; i++) //set to 100, loop will end when enough non-singular matrices are made. 
     {
-        random(x,n,n);
-        determinant(d,x);
-        //x.SetDims(n+2,n+2);
-        /*
-        for(long i= 0; i<n-2; i++){
-            x.put(i,n-1,0);
-            x.put(i,n-2,0);
-        } 
-
-        for(long j= 0; j<n; j++){
-            x.put(n-1,j,0);
-            x.put(n-2,j,0);
-        } */
+        random(x,n,n); //NTL creates a random nxn matrix
+        determinant(d,x); //checks the determinant for the matrix
+       
 
         if(d ==1){
-            cout<< "matrix {" << i << "} in nonsingular" << endl; 
+            numOfNSMatrices += 1; 
+            cout<< "matrix {" << i << "} is nonsingular" << endl; 
             //cout<< x << endl; 
            
             convertGF2_to_vec(x,myVec);
             cout<< "matrix {" << i << "} in convertet form" << endl; 
             //printVecMat(myVec);
             //writeMatToFile(myVec,"matrices329.txt"); //uncomment to rewrite to file
+            
            
+        }
+        if(numOfNSMatrices == 5){ //set to the required amount of matrices. 
+            cout << "found 5 NS matrices, breaking out of loop" << endl; 
+            break; 
         }
      
     }
+    clock_t matrix_gen_timer_end = clock();
+    matrix_time = (double)(matrix_gen_timer_end-matrix_gen_timer_start)/CLOCKS_PER_SEC; 
+    cout << "matrix timer: " << matrix_time << endl; 
     return 0; 
 }

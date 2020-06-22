@@ -1,4 +1,5 @@
 //MyMatMulFull
+//helper class to create MatMulFull objects to be used for MatMulFullexec objects. 
 
 #include <stdio.h>
 //#include <helib/matmul.h>
@@ -7,7 +8,7 @@ NTL_CLIENT
 class MyMatMulFull : public MatMulFull_derived<PA_GF2> {
     PA_INJECT(PA_GF2)
     const EncryptedArray& ea; 
-    vector<vector<RX>> data; //RX? //std
+    vector<vector<RX>> data; 
 
 public:
     MyMatMulFull(const EncryptedArray& _ea, const char *fname): ea(_ea) {

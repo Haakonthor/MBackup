@@ -6,17 +6,13 @@
 
 #IncludeRegexTransform: 
 
+/home/hakon/Rasta_ht/CyclicRotation_chi.h
+
 /home/hakon/Rasta_ht/MyMatMulFull.h
 stdio.h
 -
 
-/home/hakon/Rasta_ht/Non_singular_matrix_generation.h
-cassert
--
-cstdio
--
-iostream
--
+/home/hakon/Rasta_ht/Rasta_80_327.h
 
 /home/hakon/Rasta_ht/Rasta_main.cpp
 iostream
@@ -35,12 +31,14 @@ MyMatMulFull.h
 /home/hakon/Rasta_ht/MyMatMulFull.h
 readConstant.h
 /home/hakon/Rasta_ht/readConstant.h
-Non_singular_matrix_generation.h
-/home/hakon/Rasta_ht/Non_singular_matrix_generation.h
+CyclicRotation_chi.h
+/home/hakon/Rasta_ht/CyclicRotation_chi.h
 sys/time.h
 -
 sys/resource.h
 -
+Rasta_80_327.h
+/home/hakon/Rasta_ht/Rasta_80_327.h
 
 /home/hakon/Rasta_ht/readConstant.h
 stdio.h

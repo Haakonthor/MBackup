@@ -5,8 +5,8 @@
   std::cout << "############ nr of slots created ##########" << std::endl;
 
   
-
-  int n = 12000;
+//m = 10001
+  int n = 13000;
   long max_slots = 0;
   int temp_m = 0;  
   std::ofstream myfile;
